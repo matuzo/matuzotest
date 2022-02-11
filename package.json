@@ -1,0 +1,23 @@
+{
+  "name": "sectest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matuzo/matuzotest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/matuzo/matuzotest/issues"
+  },
+  "homepage": "https://github.com/matuzo/matuzotest#readme",
+  "dependencies": {
+    "query-string": "^7.1.1"
+  }
+}

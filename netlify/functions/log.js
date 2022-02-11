@@ -1,10 +1,10 @@
 exports.handler = async function (event, context) {
   const fs = require('fs')
+  const queryString = require('query-string');
+  
+  const parsed = queryString.parse(location.search);
 
-  let params = (new URL(document.location)).searchParams;
-  let q = params.get('q'); // is the string "Jonathan Smith".
-
-  fs.writeFile('./idlog.txt', q, err => {
+  fs.writeFile('/idlog.txt', parsed.q, err => {
     if (err) {
       console.error(err)
       return

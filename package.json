@@ -16,8 +16,5 @@
   "bugs": {
     "url": "https://github.com/matuzo/matuzotest/issues"
   },
-  "homepage": "https://github.com/matuzo/matuzotest#readme",
-  "dependencies": {
-    "query-string": "^7.1.1"
-  }
+  "homepage": "https://github.com/matuzo/matuzotest#readme"
 }

@@ -29,18 +29,17 @@
     </ol>
   </div>
   
-  <script>
+  <script type="module">
+    import { escapeHtml } from './escape-html.mjs';
+
     let params = (new URL(document.location)).searchParams;
     let q = params.get('q');
 
     if (q) {
       document.querySelector('[data-results]').removeAttribute('hidden')
       document.querySelector('input').value = q
-      document.querySelector('.term').innerHTML = q
+      document.querySelector('.term').innerHTML = escapeHtml(q)
     }
-    // document.querySelector('.term').innerHTML = eval(q)
-    // document.write(q)
-
   </script>
 </body>
 </html>

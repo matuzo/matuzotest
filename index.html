@@ -11,33 +11,10 @@
         
         *:focus { outline: 2px solid red; } 
         
-        /* body {background: red url("javascript:alert(1)") } */
         
     </style>
 </head>
 <body>
-    <h1>Showing results for “<mark class="term"></mark>”</h1>
-
-    <a href="javascript:alert(1)">Link</a>
-
-    <form role="search" method="GET">
-        <label for="term">Search term</label>
-        <input type="text" id="term" name="q">
-        <button>search</button>
-    </form>
-
-    <script>
-        
-        let params = (new URL(document.location)).searchParams;
-        let q = params.get('q'); // is the string "Jonathan Smith".
- 
-        setTimeout(function() {
-        document.querySelector('.term').innerHTML = q
-        // document.querySelector('.term').innerHTML = eval(q)
-        // document.write(q)
-        console.log(q)
-    }, 100);
-    </script>
     
 </body>
 </html>
